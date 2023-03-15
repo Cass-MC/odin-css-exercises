@@ -6,9 +6,9 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 100px 80px 800px 50px;
-  gap: 5px;
+  gap: 4px;
 }
 
 .container div {
@@ -23,13 +23,17 @@
   background-color: #393f4d;
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-column: 1/3;
   grid-row: 1/2;
 }
 
+.logo {
+  justify-self: first baseline;
+}
+
 .menu {
-  grid-column: 3/4;
+  grid-column: 2/3;
 }
 
 .menu li {
@@ -51,7 +55,7 @@
   background-color: #FF7755;
   display: grid;
   grid-template-rows: repeat(4,1fr);
-  align-items: space-between;
+  row-gap: 50px;
   grid-column: 1/2;
   grid-row: 2/4;
 }
